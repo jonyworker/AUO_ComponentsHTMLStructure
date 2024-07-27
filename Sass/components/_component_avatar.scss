@@ -1,0 +1,125 @@
+/*////////////////////////////
+===== component - Avatar =====
+////////////////////////////*/
+
+//////////////////////// ===== Avatar Group START ===== ////////////////////////
+.avatar-container {
+    position: relative;
+    width: fit-content;
+}
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+.avatar-group .avatar-container:not(:nth-child(1)) {
+    margin-left: -8px;
+}
+.avatar-group .avatar-container:not(:nth-child(1)) .avatar {
+    border-width: 2px;
+    border-color: #fff;
+    border-style: solid;
+}
+
+//////////////////////// ===== Avatar START ===== ////////////////////////
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    background-color: #d9d9d9;
+    overflow: hidden;
+    position: relative;
+}
+.avatar.more {
+    text-decoration: none;
+    background-color: #384152;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+.avatar.initial {
+    color: #999999;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.avatar img {
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.avatar.rounded {
+    border-radius: 9999px;
+}
+.avatar.sm {
+    width: 40px;
+    height: 40px;
+}
+.avatar.md {
+    width: 56px;
+    height: 56px;
+}
+.avatar.lg {
+    width: 72px;
+    height: 72px;
+}
+
+//////////////////////// ===== Avatar Status START ===== ////////////////////////
+.avatar-status {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    border: 2px solid #fff;
+}
+.avatar-status.status-position-tl {
+    top: -6px;
+    left: -6px;
+}
+.avatar-status.status-position-tr {
+    top: -6px;
+    right: -6px;
+}
+.avatar-status.status-position-br {
+    bottom: -6px;
+    right: -6px;
+}
+.avatar-status.status-position-bl {
+    bottom: -6px;
+    left: -6px;
+}
+.avatar-status.status-position-tl-rounded {
+    top: 0;
+    left: 0;
+}
+.avatar-status.status-position-tr-rounded {
+    top: 0;
+    right: 0;
+}
+.avatar-status.status-position-br-rounded {
+    bottom: 0;
+    right: 0;
+}
+.avatar-status.status-position-bl-rounded {
+    bottom: 0;
+    left: 0;
+}
+.avatar-status {
+    /* green */
+    background-color: #31c48d;
+}
+.avatar-status.status-busy {
+    /* yellow */
+    background-color: #e3a008;
+}
+.avatar-status.status-away {
+    /* gray */
+    background-color: #9ca3af;
+}
+.avatar-status.status-offline {
+    /* red */
+    background-color: #f98080;
+}
