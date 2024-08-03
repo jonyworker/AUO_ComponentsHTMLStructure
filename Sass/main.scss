@@ -1,10 +1,11 @@
 // 載入基礎設定
 @import "base/base_reset";
-@import "base/base_bootstrap-grid";
+@import "base/base_gridSystem";
 @import "base/base_spacing";
 
 // component區塊設定
 @import "components/component_avatar";
+@import "components/component_checkbox";
 
 // layout區塊設定
 // @import "layout_header";

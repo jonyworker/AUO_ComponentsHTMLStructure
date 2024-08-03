@@ -1,0 +1,54 @@
+/*//////////////////////////////
+===== component - Checkbox =====
+//////////////////////////////*/
+
+//////////////////////// ===== checkbox START ===== ////////////////////////
+.checkbox {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    &__control {
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        cursor: pointer;
+
+        &:hover + .checkbox__box {
+            border-color: #533ad4;
+        }
+
+        &:focus + .checkbox__box,
+        &:checked:hover + .checkbox__box {
+            outline-offset: 0px;
+            outline: 2px solid #dcd7f5;
+        }
+
+        &:checked + .checkbox__box {
+            background-color: #533ad4;
+            border-color: #533ad4;
+        }
+
+        &:disabled + .checkbox__box {
+            border-color: #b2b2b2;
+            background-color: #eee;
+            cursor: not-allowed;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        border: 1px solid #b2b2b2;
+    }
+}

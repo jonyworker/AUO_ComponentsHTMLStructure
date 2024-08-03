@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AUO Checkbox</title>
+        <link rel="stylesheet" href="/dist/main.min.css" />
+        <style>
+            .title {
+                margin-bottom: 16px;
+                letter-spacing: -0.02em;
+                line-height: 32px;
+                font-size: 24px;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body class="p-40">
+        <!-- [Avatar] -  -->
+        <h2 class="title">[Checkbox] - checked</h2>
+        <label for="check01" class="checkbox__container">
+            <input
+                class="checkbox__control"
+                type="checkbox"
+                name="check01"
+                id="check01"
+                checked
+            />
+            <span class="checkbox__box">
+                <img
+                    rel="stylesheet"
+                    src="../../icons/checkcbox/check_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                />
+            </span>
+            <span>因為價格便宜</span>
+        </label>
+
+        <br />
+        <!-- [Avatar] - indeterminate -->
+        <h2 class="title">[Checkbox] - indeterminate</h2>
+        <label for="check02" class="checkbox__container">
+            <input
+                class="checkbox__control"
+                type="checkbox"
+                name="check02"
+                id="check02"
+                checked
+            />
+            <span class="checkbox__box">
+                <img
+                    rel="stylesheet"
+                    src="../../icons/checkcbox/indeterminate.svg"
+                />
+            </span>
+            <span>因為價格便宜</span>
+        </label>
+    </body>
+</html>
