@@ -1,0 +1,59 @@
+/*///////////////////////////
+===== component - Radio =====
+///////////////////////////*/
+
+//////////////////////// ===== Radio START ===== ////////////////////////
+.radio {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    &__input {
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        cursor: pointer;
+
+        &:hover + .radio__custom-circle {
+            border-color: #533ad4;
+        }
+
+        &:focus + .radio__custom-circle {
+            outline-offset: 0px;
+            outline: 2px solid #dcd7f5;
+        }
+
+        &:checked:hover + .radio__custom-circle {
+            outline-offset: 0px;
+            outline: 2px solid #dcd7f5;
+        }
+
+        &:checked + .radio__custom-circle {
+            border-color: #533ad4;
+            border-width: 5px;
+        }
+
+        &:disabled + .radio__custom-circle {
+            border-color: #b2b2b2;
+            background-color: #eee;
+            cursor: not-allowed;
+        }
+    }
+
+    &__custom-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 999px;
+        border: 1px solid #b2b2b2;
+        transition: border-width 0.15s;
+    }
+}

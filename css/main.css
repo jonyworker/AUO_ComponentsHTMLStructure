@@ -3,19 +3,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,8 +93,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -34,16 +111,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -62,6 +143,10 @@ select {
 img {
   width: 100%;
   vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .container,
@@ -6724,37 +6809,37 @@ xxl => >=1400px */
 /*//////////////////////////////
 ===== component - Checkbox =====
 //////////////////////////////*/
-.checkbox__container {
+.checkbox__wrapper {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 8px;
   cursor: pointer;
 }
-.checkbox__control {
+.checkbox__input {
   position: absolute;
   height: 0;
   width: 0;
   opacity: 0;
   cursor: pointer;
 }
-.checkbox__control:hover + .checkbox__box {
+.checkbox__input:hover + .checkbox__custom-box {
   border-color: #533ad4;
 }
-.checkbox__control:focus + .checkbox__box, .checkbox__control:checked:hover + .checkbox__box {
+.checkbox__input:focus + .checkbox__custom-box, .checkbox__input:checked:hover + .checkbox__custom-box {
   outline-offset: 0px;
   outline: 2px solid #dcd7f5;
 }
-.checkbox__control:checked + .checkbox__box {
+.checkbox__input:checked + .checkbox__custom-box {
   background-color: #533ad4;
   border-color: #533ad4;
 }
-.checkbox__control:disabled + .checkbox__box {
+.checkbox__input:disabled + .checkbox__custom-box {
   border-color: #b2b2b2;
   background-color: #eee;
   cursor: not-allowed;
 }
-.checkbox__box {
+.checkbox__custom-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6763,4 +6848,53 @@ xxl => >=1400px */
   height: 16px;
   border-radius: 4px;
   border: 1px solid #b2b2b2;
+}
+
+/*///////////////////////////
+===== component - Radio =====
+///////////////////////////*/
+.radio__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  cursor: pointer;
+}
+.radio__input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.radio__input:hover + .radio__custom-circle {
+  border-color: #533ad4;
+}
+.radio__input:focus + .radio__custom-circle {
+  outline-offset: 0px;
+  outline: 2px solid #dcd7f5;
+}
+.radio__input:checked:hover + .radio__custom-circle {
+  outline-offset: 0px;
+  outline: 2px solid #dcd7f5;
+}
+.radio__input:checked + .radio__custom-circle {
+  border-color: #533ad4;
+  border-width: 5px;
+}
+.radio__input:disabled + .radio__custom-circle {
+  border-color: #b2b2b2;
+  background-color: #eee;
+  cursor: not-allowed;
+}
+.radio__custom-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 1px solid #b2b2b2;
+  transition: border-width 0.15s;
 }/*# sourceMappingURL=main.css.map */
