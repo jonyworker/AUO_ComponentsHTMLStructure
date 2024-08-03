@@ -4,7 +4,7 @@
 
 //////////////////////// ===== checkbox START ===== ////////////////////////
 .checkbox {
-    &__container {
+    &__wrapper {
         display: flex;
         align-items: center;
         justify-content: start;
@@ -12,36 +12,36 @@
         cursor: pointer;
     }
 
-    &__control {
+    &__input {
         position: absolute;
         height: 0;
         width: 0;
         opacity: 0;
         cursor: pointer;
 
-        &:hover + .checkbox__box {
+        &:hover + .checkbox__custom-box {
             border-color: #533ad4;
         }
 
-        &:focus + .checkbox__box,
-        &:checked:hover + .checkbox__box {
+        &:focus + .checkbox__custom-box,
+        &:checked:hover + .checkbox__custom-box {
             outline-offset: 0px;
             outline: 2px solid #dcd7f5;
         }
 
-        &:checked + .checkbox__box {
+        &:checked + .checkbox__custom-box {
             background-color: #533ad4;
             border-color: #533ad4;
         }
 
-        &:disabled + .checkbox__box {
+        &:disabled + .checkbox__custom-box {
             border-color: #b2b2b2;
             background-color: #eee;
             cursor: not-allowed;
         }
     }
 
-    &__box {
+    &__custom-box {
         display: flex;
         justify-content: center;
         align-items: center;
