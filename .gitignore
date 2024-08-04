@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+
+# SASS cache files
+.sass-cache/
+*.css.map
+
+# Distribution folder
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+
+# Build directories
+build/
+
+# Temp files
+tmp/
+temp/
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
