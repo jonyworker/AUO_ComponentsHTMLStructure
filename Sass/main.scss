@@ -2,11 +2,13 @@
 @import "base/base_reset";
 @import "base/base_gridSystem";
 @import "base/base_spacing";
+@import "base/variable";
 
 // component區塊設定
 @import "components/component_avatar";
 @import "components/component_checkbox";
 @import "components/component_radio";
+@import "components/component_input-basic";
 
 // layout區塊設定
 // @import "layout_header";

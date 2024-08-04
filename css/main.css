@@ -6897,4 +6897,94 @@ xxl => >=1400px */
   border-radius: 999px;
   border: 1px solid #b2b2b2;
   transition: border-width 0.15s;
+}
+
+/*/////////////////////////////////
+===== component - Input Basic =====
+////////////////////////////////*/
+.input__wrapper {
+  position: relative;
+}
+
+.input__icon-left {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  bottom: 0px;
+  margin-block: auto;
+}
+
+.input__icon-right {
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  bottom: 0px;
+  margin-block: auto;
+}
+
+.input__field {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  cursor: text;
+}
+
+.input__field.input__field--sm {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.input__field.input__field--md {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.input__field.input__field--lg {
+  padding: 12px 8px;
+  font-size: 18px;
+}
+
+.input__field--sm.icon__pos-left {
+  padding-left: 32px;
+}
+
+.input__field--md.icon__pos-left {
+  padding-left: 36px;
+}
+
+.input__field--lg.icon__pos-left {
+  padding-left: 40px;
+}
+
+.input__field--sm.icon__pos-right {
+  padding-right: 24px;
+}
+
+.input__field--md.icon__pos-right {
+  padding-right: 36px;
+}
+
+.input__field--lg.icon__pos-right {
+  padding-right: 40px;
+}
+
+.input__field:hover {
+  border-color: #533ad4;
+}
+
+.input__field:focus,
+.input__field:checked:hover {
+  outline-offset: 0px;
+  outline: 2px solid #dcd7f5;
+}
+
+.input__field::-moz-placeholder {
+  color: #999;
+}
+
+.input__field::placeholder {
+  color: #999;
 }/*# sourceMappingURL=main.css.map */
