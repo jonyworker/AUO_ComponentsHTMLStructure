@@ -7,7 +7,49 @@
 .input__wrapper {
     position: relative;
 }
+.input__field {
+    width: 100%;
+    border-width: $input-border-width;
+    border-style: solid;
+    border-color: $border-color-default;
+    border-radius: $radius-size-xsmall;
+    background-color: $color-white;
+    cursor: text;
+}
 
+.input__field[type="date"]::-webkit-datetime-edit {
+    font-size: 16px;
+    line-height: 1;
+}
+.input__field[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    -webkit-appearance: none;
+}
+
+// input size 設定
+.input__field.input__field--sm {
+    padding: 4px 8px;
+    font-size: 14px;
+}
+.input__field.input__field--md {
+    padding: 8px;
+    font-size: 1rem;
+}
+.input__field.input__field--lg {
+    padding: 12px 8px;
+    font-size: 18px;
+}
+
+// input icon 設定
 .input__icon-left {
     position: absolute;
     top: 0px;
@@ -22,29 +64,6 @@
     bottom: 0px;
     margin-block: auto;
 }
-
-.input__field {
-    width: 100%;
-    border-width: $input-border-width;
-    border-style: solid;
-    border-color: $border-color-default;
-    border-radius: $radius-size-xsmall;
-    background-color: $color-white;
-    cursor: text;
-}
-.input__field.input__field--sm {
-    padding: 4px 8px;
-    font-size: 14px;
-}
-.input__field.input__field--md {
-    padding: 8px;
-    font-size: 1rem;
-}
-.input__field.input__field--lg {
-    padding: 12px 8px;
-    font-size: 18px;
-}
-
 .input__field--sm.icon__pos-left {
     padding-left: 32px;
 }
@@ -68,6 +87,7 @@
     border-color: #533ad4;
 }
 
+.input__field:active,
 .input__field:focus,
 .input__field:checked:hover {
     outline-offset: 0px;

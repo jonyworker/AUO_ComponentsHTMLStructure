@@ -6906,22 +6906,6 @@ xxl => >=1400px */
   position: relative;
 }
 
-.input__icon-left {
-  position: absolute;
-  top: 0px;
-  left: 8px;
-  bottom: 0px;
-  margin-block: auto;
-}
-
-.input__icon-right {
-  position: absolute;
-  top: 0px;
-  right: 8px;
-  bottom: 0px;
-  margin-block: auto;
-}
-
 .input__field {
   width: 100%;
   border-width: 1px;
@@ -6930,6 +6914,25 @@ xxl => >=1400px */
   border-radius: 4px;
   background-color: #FFFFFF;
   cursor: text;
+}
+
+.input__field[type=date]::-webkit-datetime-edit {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.input__field[type=date]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  -webkit-appearance: none;
 }
 
 .input__field.input__field--sm {
@@ -6945,6 +6948,22 @@ xxl => >=1400px */
 .input__field.input__field--lg {
   padding: 12px 8px;
   font-size: 18px;
+}
+
+.input__icon-left {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  bottom: 0px;
+  margin-block: auto;
+}
+
+.input__icon-right {
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  bottom: 0px;
+  margin-block: auto;
 }
 
 .input__field--sm.icon__pos-left {
@@ -6975,6 +6994,7 @@ xxl => >=1400px */
   border-color: #533ad4;
 }
 
+.input__field:active,
 .input__field:focus,
 .input__field:checked:hover {
   outline-offset: 0px;
