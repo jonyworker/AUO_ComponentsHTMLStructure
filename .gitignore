@@ -6,7 +6,7 @@ node_modules/
 *.css.map
 
 # Distribution folder
-dist/*
+dist/
 
 # Logs
 logs/
@@ -41,3 +41,6 @@ temp/
 *.njsproj
 *.sln
 *.sw?
+
+
+css/
