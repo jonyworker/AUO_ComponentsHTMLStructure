@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AUO Checkbox</title>
+        <link rel="stylesheet" href="/dist/main.min.css" />
+        <style>
+            .title {
+                margin-bottom: 16px;
+                letter-spacing: -0.02em;
+                line-height: 32px;
+                font-size: 24px;
+                font-weight: 900;
+            }
+            .fake-content {
+                flex-grow: 1;
+                border: 2px solid #999;
+                display: grid;
+                place-items: center;
+                border-radius: 8px;
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body class="p-40">
+        <!-- [Divider] - Horizontal -->
+        <h2 class="title">[Divider] - Horizontal</h2>
+        <div class="d-flex flex-column mb-32" style="height: 300px">
+            <div class="fake-content">content</div>
+            <div class="divider"></div>
+            <div class="fake-content">content</div>
+        </div>
+
+        <!-- [Divider] - Vertical -->
+        <h2 class="title">[Divider] - Vertical</h2>
+        <div class="d-flex justify-content-center mb-32" style="height: 200px">
+            <div class="fake-content">content</div>
+            <div class="divider divider-vertical"></div>
+            <div class="fake-content">content</div>
+        </div>
+
+        <!-- [Divider] - Horizontal With Text -->
+        <h2 class="title">[Divider] - Horizontal With Text</h2>
+        <div class="mb-32">
+            <div class="divider divider-start divider_gap">start</div>
+            <div class="divider divider_gap">default</div>
+            <div class="divider divider-end divider_gap">end</div>
+        </div>
+
+        <!-- [Divider] - Vertical With Text -->
+        <h2 class="title">[Divider] - Vertical With Text</h2>
+        <div
+            style="height: 200px; border: 1px solid #999; border-radius: 8px"
+            class="d-flex justify-content-center p-20"
+        >
+            <div class="divider divider-vertical divider-start divider_gap">
+                start
+            </div>
+            <div class="divider divider-vertical divider_gap">Default</div>
+            <div class="divider divider-vertical divider-end divider_gap">
+                end
+            </div>
+        </div>
+    </body>
+</html>
