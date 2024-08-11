@@ -1,0 +1,56 @@
+/*/////////////////////////
+===== component - Tab =====
+/////////////////////////*/
+
+//////////////////////// ===== Tab START ===== ////////////////////////
+
+.tab__wrapper {
+}
+.tab__list {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.tab__list--item {
+    cursor: pointer;
+    display: inline-block;
+    padding: 16px 64px;
+    border-radius: 8px 8px 0 0;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #e5e7eb;
+    --transition-duration: var(--durations-normal);
+    transition-duration: var(--durations-normal);
+    --transition-prop: color, background, border-color;
+    transition-property: color, background, border-color;
+    --transition-easing: var(--easings-default);
+    transition-timing-function: var(--easings-default);
+}
+.tab__list--item.active {
+    background-color: #fff;
+    color: #533bd4;
+    border: 1px solid #e5e7eb;
+    border-bottom: none;
+}
+.tab__list--item:hover {
+    background-color: #dcd7f5;
+    // color: green;
+}
+
+// .tab__list--item:focus {
+//     outline: 3px solid #f00;
+// }
+
+.tab__content {
+    padding: 20px;
+    display: none;
+}
+.tab__content.active {
+    display: block;
+}
+* {
+    box-sizing: border-box;
+}

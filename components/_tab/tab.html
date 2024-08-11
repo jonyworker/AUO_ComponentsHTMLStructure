@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AUO Tab</title>
+        <link rel="stylesheet" href="/dist/main.min.css" />
+        <style>
+            .title {
+                margin-bottom: 16px;
+                letter-spacing: -0.02em;
+                line-height: 32px;
+                font-size: 24px;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body class="p-40">
+        <!-- [Tab] - Outline -->
+        <h2 class="title">[Tab] - Outline</h2>
+        <div class="vp-raw">
+            <div class="">
+                <ul class="tab__list" id="outline">
+                    <li>
+                        <button
+                            data-title="First"
+                            class="tab__list--item active"
+                        >
+                            First
+                        </button>
+                    </li>
+                    <li>
+                        <button data-title="Second" class="tab__list--item">
+                            Second
+                        </button>
+                    </li>
+                    <li>
+                        <button data-title="Third" class="tab__list--item">
+                            Third
+                        </button>
+                    </li>
+                    <li>
+                        <button data-title="Fourth" class="tab__list--item">
+                            Fourth
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="tab__content" data-title="First">
+                    First Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Corporis facilis soluta consequuntur. Distinctio hic
+                    perspiciatis sunt dignissimos non nemo aspernatur eum velit
+                    sed accusantium, asperiores maiores laborum facere quibusdam
+                    placeat?
+                </div>
+                <div class="tab__content" data-title="Second">
+                    Second Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Corporis facilis soluta consequuntur. Distinctio hic
+                    perspiciatis sunt dignissimos non nemo aspernatur eum velit
+                    sed accusantium, asperiores maiores laborum facere quibusdam
+                    placeat?
+                </div>
+                <div class="tab__content" data-title="Third">
+                    Third Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Corporis facilis soluta consequuntur. Distinctio hic
+                    perspiciatis sunt dignissimos non nemo aspernatur eum velit
+                    sed accusantium, asperiores maiores laborum facere quibusdam
+                    placeat?
+                </div>
+                <div class="tab__content" data-title="Fourth">
+                    Fourth Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Corporis facilis soluta consequuntur. Distinctio hic
+                    perspiciatis sunt dignissimos non nemo aspernatur eum velit
+                    sed accusantium, asperiores maiores laborum facere quibusdam
+                    placeat?
+                </div>
+            </div>
+        </div>
+
+        <!-- [Tab] - Underline -->
+        <h2 class="title">[Tab] - Outline</h2>
+
+        <script>
+            const blockEl = document.getElementById("outline_tabblock");
+
+            const onClickEvent = (event) => {
+                if (event.target.tagName === "BUTTON") {
+                    const dataTitle = event.target.dataset.title;
+                    console.log(dataTitle);
+
+                    document
+                        .querySelectorAll(".tab__content")
+                        .forEach((content) => {
+                            content.classList.remove("active");
+                        });
+
+                    const activeContent = document.querySelector(
+                        `.tab__content[data-title="${dataTitle}"]`
+                    );
+                    if (activeContent) {
+                        activeContent.classList.add("active");
+                    }
+
+                    document
+                        .querySelectorAll(".tab__list--item")
+                        .forEach((tab) => {
+                            tab.classList.remove("active");
+                        });
+                    event.target.classList.add("active");
+                }
+            };
+
+            blockEl.addEventListener("click", onClickEvent);
+        </script>
+    </body>
+</html>

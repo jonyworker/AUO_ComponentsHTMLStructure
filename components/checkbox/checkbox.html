@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AUO Checkbox</title>
-        <link rel="stylesheet" href="/dist/main.min.css" />
+        <link rel="stylesheet" href="/dist/globals.min.css" />
         <style>
             .title {
                 margin-bottom: 16px;
@@ -15,38 +15,278 @@
             }
         </style>
     </head>
-    <body class="p-40">
-        <!-- [Avatar] -  -->
-        <h2 class="title">[Checkbox] - checked</h2>
-        <label for="check01" class="checkbox__wrapper">
-            <input
-                class="checkbox__input"
-                type="checkbox"
-                name="check01"
-                id="check01"
-                checked
-            />
-            <span class="checkbox__custom-box">
-                <img rel="stylesheet" src="../../icons/check.svg" />
-            </span>
-            <span>因為價格便宜</span>
-        </label>
+    <body style="padding: 40px">
+        <!-- [Checkbox] - direction column -->
+        <h2 class="title">[Checkbox] - direction column</h2>
+        <div class="checkbox-container checkbox-container-column">
+            <label for="option1" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option1"
+                    name="option"
+                    type="checkbox"
+                    value="option1"
+                />
+                <div class="checkbox-icon checkbox-unchecked-primary"></div>
+                <span class="checkbox-text">選項一</span>
+            </label>
+            <label for="option2" class="checkbox"
+                ><input
+                    class="checkbox-input"
+                    id="option2"
+                    name="option"
+                    type="checkbox"
+                    value="option2"
+                />
+                <div class="checkbox-icon checkbox-checked-primary">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">選項二</span>
+            </label>
+            <label for="option3" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option3"
+                    name="option"
+                    type="checkbox"
+                    value="option3"
+                />
+                <div class="checkbox-icon checkbox-unchecked-primary"></div>
+                <span class="checkbox-text">選項三</span>
+            </label>
+        </div>
 
-        <br />
-        <!-- [Avatar] - indeterminate -->
-        <h2 class="title">[Checkbox] - indeterminate</h2>
-        <label for="check02" class="checkbox__wrapper">
-            <input
-                class="checkbox__input"
-                type="checkbox"
-                name="check02"
-                id="check02"
-                checked
-            />
-            <span class="checkbox__custom-box">
-                <img rel="stylesheet" src="../../icons/indeterminate.svg" />
-            </span>
-            <span>因為價格便宜</span>
-        </label>
+        <!-- [Checkbox] - direction row -->
+        <h2 class="title">[Checkbox] - direction row</h2>
+        <div class="checkbox-container checkbox-container">
+            <label for="option1" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option1"
+                    name="option"
+                    type="checkbox"
+                    value="option1"
+                />
+                <div class="checkbox-icon checkbox-unchecked-primary"></div>
+                <span class="checkbox-text">選項一</span>
+            </label>
+            <label for="option2" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option2"
+                    name="option"
+                    type="checkbox"
+                    value="option2"
+                />
+                <div class="checkbox-icon checkbox-checked-primary">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">選項二</span>
+            </label>
+            <label for="option3" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option3"
+                    name="option"
+                    type="checkbox"
+                    value="option3"
+                />
+                <div class="checkbox-icon checkbox-unchecked-primary"></div>
+                <span class="checkbox-text">選項三</span>
+            </label>
+        </div>
+
+        <!-- [Checkbox] - direction themeColor -->
+        <h2 class="title">[Checkbox] - themeColor</h2>
+        <div class="checkbox-container checkbox-container">
+            <!-- primary -->
+            <label for="option1" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option1"
+                    name="option"
+                    type="checkbox"
+                    value="option1"
+                />
+                <div class="checkbox-icon checkbox-checked-primary">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">primary</span>
+            </label>
+            <!-- secondary -->
+            <label for="option2" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option2"
+                    name="option"
+                    type="checkbox"
+                    value="option2"
+                />
+                <div class="checkbox-icon checkbox-checked-secondary">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">secondary</span>
+            </label>
+            <!-- tertiary -->
+            <label for="option3" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option3"
+                    name="option"
+                    type="checkbox"
+                    value="option3"
+                />
+                <div class="checkbox-icon checkbox-checked-tertiary">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">tertiary</span>
+            </label>
+            <!-- success -->
+            <label for="option3" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option3"
+                    name="option"
+                    type="checkbox"
+                    value="option3"
+                />
+                <div class="checkbox-icon checkbox-checked-success">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">success</span>
+            </label>
+            <!-- warning -->
+            <label for="option3" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option3"
+                    name="option"
+                    type="checkbox"
+                    value="option3"
+                />
+                <div class="checkbox-icon checkbox-checked-warning">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">warning</span>
+            </label>
+            <!-- error -->
+            <label for="option3" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option3"
+                    name="option"
+                    type="checkbox"
+                    value="option3"
+                />
+                <div class="checkbox-icon checkbox-checked-error">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">error</span>
+            </label>
+            <!-- info -->
+            <label for="option3" class="checkbox">
+                <input
+                    class="checkbox-input"
+                    id="option3"
+                    name="option"
+                    type="checkbox"
+                    value="option3"
+                />
+                <div class="checkbox-icon checkbox-checked-info">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        viewBox="0 -960 960 960"
+                        width="100%"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                        ></path>
+                    </svg>
+                </div>
+                <span class="checkbox-text">info</span>
+            </label>
+        </div>
     </body>
 </html>

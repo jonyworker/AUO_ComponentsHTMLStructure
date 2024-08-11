@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AUO Checkbox</title>
-        <link rel="stylesheet" href="/dist/main.min.css" />
+        <title>AUO Divider</title>
+        <link rel="stylesheet" href="/dist/globals.min.css" />
         <style>
             .title {
                 margin-bottom: 16px;
@@ -32,10 +32,18 @@
             }
         </style>
     </head>
-    <body class="p-40">
+    <body style="padding: 40px">
         <!-- [Divider] - Horizontal -->
         <h2 class="title">[Divider] - Horizontal</h2>
-        <div class="d-flex flex-column mb-32" style="height: 300px">
+        <div
+            class="d-flex flex-column mb-32"
+            style="
+                display: flex;
+                flex-direction: column;
+                height: 300px;
+                margin-bottom: 32px;
+            "
+        >
             <div class="fake-content">content</div>
             <div class="divider"></div>
             <div class="fake-content">content</div>
@@ -43,7 +51,7 @@
 
         <!-- [Divider] - Vertical -->
         <h2 class="title">[Divider] - Vertical</h2>
-        <div class="d-flex justify-content-center mb-32" style="height: 200px">
+        <div style="display: flex; height: 300px; margin-bottom: 32px">
             <div class="fake-content">content</div>
             <div class="divider divider-vertical"></div>
             <div class="fake-content">content</div>
@@ -51,7 +59,7 @@
 
         <!-- [Divider] - Horizontal With Text -->
         <h2 class="title">[Divider] - Horizontal With Text</h2>
-        <div class="mb-32">
+        <div style="margin-bottom: 32px">
             <div class="divider divider-start divider_gap">start</div>
             <div class="divider divider_gap">default</div>
             <div class="divider divider-end divider_gap">end</div>
@@ -60,8 +68,14 @@
         <!-- [Divider] - Vertical With Text -->
         <h2 class="title">[Divider] - Vertical With Text</h2>
         <div
-            style="height: 200px; border: 1px solid #999; border-radius: 8px"
-            class="d-flex justify-content-center p-20"
+            style="
+                height: 200px;
+                border: 1px solid #999;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            "
         >
             <div class="divider divider-vertical divider-start divider_gap">
                 start
