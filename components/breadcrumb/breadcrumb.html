@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AUO Breadcrumb</title>
+        <link rel="stylesheet" href="/dist/globals.min.css" />
+        <style>
+            .title {
+                margin-bottom: 16px;
+                letter-spacing: -0.02em;
+                line-height: 32px;
+                font-size: 24px;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body style="padding: 40px">
+        <!-- [Breadcrumb] - default -->
+        <h2 class="title">[Breadcrumb] - default</h2>
+        <nav class="breadcrumb-container undefined">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="breadcrumb-item-link" href="/">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="breadcrumb-item-link" href="/first">第一層</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-item-label">第二層</span>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- [Breadcrumb] - rest Layers -->
+        <h2 class="title">[Breadcrumb] - Many Layers</h2>
+        <nav class="breadcrumb-container undefined">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="breadcrumb-item-link" href="/">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <div class="rest">
+                        <span class="rest-label">...</span>
+                    </div>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="breadcrumb-item-link" href="/first/second/third/n"
+                        >第n層</a
+                    >
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-item-label">當前頁</span>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- [Breadcrumb] - rest Layers dropdown -->
+        <h2 class="title">[Breadcrumb] - Many Layers</h2>
+        <nav class="breadcrumb-container undefined">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="breadcrumb-item-link" href="/">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <div class="rest">
+                        <span class="rest-label">...</span>
+                        <ul class="rest-dropdown-menu">
+                            <li class="drop-item">
+                                <a class="drop-item-link" href="/first"
+                                    >第一層</a
+                                >
+                            </li>
+                            <li class="drop-item">
+                                <a
+                                    class="drop-item-link"
+                                    href="https://tw.yahoo.com"
+                                    >第二層</a
+                                >
+                            </li>
+                            <li class="drop-item">
+                                <a
+                                    class="drop-item-link"
+                                    href="/first/second/third"
+                                    >第三層</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="breadcrumb-item-link" href="/first/second/third/n"
+                        >第n層</a
+                    >
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-item-label">當前頁</span>
+                </li>
+            </ol>
+        </nav>
+    </body>
+</html>
