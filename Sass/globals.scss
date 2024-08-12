@@ -16,24 +16,24 @@
 // @import "layout_header";
 
 // 載入基礎設定
-@import "./theme/_reset";
-@import "./theme/_variable";
-@import "./theme/_function";
-@import "./theme/_map";
-@import "./theme/_base";
+@import "./component/theme/reset";
+@import "./component/theme/_variable";
+@import "./component/theme/_function";
+@import "./component/theme/_map";
+@import "./component/theme/_base";
 
 // component區塊設定
 @import "./component/_accordion";
-@import "./component/_avatar";
 @import "./component/_breadcrumb";
 @import "./component/_checkbox";
 @import "./component/_divider";
 @import "./component/_tabs";
 @import "./component/_textarea";
-@import "./component/_title";
 @import "./component/_toggle";
 @import "./component/_progress";
 @import "./component/_radio";
+@import "./component/_image";
+@import "./component/_title";
 
 // component module 區塊設定
 @import "./component/module/_search";
@@ -43,7 +43,7 @@
 @import "./component/section/_card";
 
 // component element 區塊設定
-// @import "./component/element/avatar";
+@import "./component/element/_avatar";
 @import "./component/element/_button";
 @import "./component/element/_input";
 

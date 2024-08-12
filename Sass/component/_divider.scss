@@ -1,0 +1,58 @@
+/*/////////////////////////////
+===== component - Divider =====
+/////////////////////////////*/
+
+//////////////////////// ===== Divider START ===== ////////////////////////
+.divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    align-self: stretch;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 1rem;
+    white-space: nowrap;
+}
+.divider:before,
+.divider:after {
+    height: 2px;
+    width: 100%;
+    flex-grow: 1;
+    content: "";
+    background-color: #f00;
+}
+.divider.divider-start.divider:before {
+    content: none;
+}
+.divider.divider-end.divider:after {
+    content: none;
+}
+
+//////////////////////// ===== Divider Vertical START ===== ////////////////////////
+.divider.divider-vertical {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 1rem;
+    flex-direction: column;
+}
+.divider.divider-vertical:before,
+.divider.divider-vertical:after {
+    height: 100%;
+    width: 2px;
+    background-color: #f00;
+}
+
+.divider.divider-start.divider-vertical:before {
+    content: none;
+}
+.divider.divider-end.divider-vertical:after {
+    content: none;
+}
+
+.divider_gap {
+    gap: 8px;
+}

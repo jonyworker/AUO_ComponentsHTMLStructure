@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AUO Image</title>
+        <link rel="stylesheet" href="/dist/globals.min.css" />
+        <style>
+            .title {
+                margin-bottom: 16px;
+                letter-spacing: -0.02em;
+                line-height: 32px;
+                font-size: 24px;
+                font-weight: 900;
+            }
+            .fake-content {
+                flex-grow: 1;
+                border: 2px solid #999;
+                display: grid;
+                place-items: center;
+                border-radius: 8px;
+                background-color: #e5e5f7;
+                opacity: 0.2;
+                background-size: 10px 10px;
+                background-image: repeating-linear-gradient(
+                    45deg,
+                    #ababab 0,
+                    #ababab 1px,
+                    #e5e5f7 0,
+                    #e5e5f7 50%
+                );
+            }
+        </style>
+    </head>
+    <body style="padding: 40px">
+        <!-- [Image] - ratio 1/1 -->
+        <h2 class="title">[Image] - ratio 1/1</h2>
+        <div class="image-container ratio-1x1" style="width: 200px">
+            <img
+                class="image cover"
+                src="../../images/avatar/avatar_01.jpg"
+                alt=""
+            />
+        </div>
+
+        <!-- [Image] - ratio 3/2 -->
+        <h2 class="title">[Image] - ratio 3/2</h2>
+        <div class="image-container ratio-3x2" style="width: 200px">
+            <img
+                class="image cover"
+                src="../../images/avatar/avatar_01.jpg"
+                alt=""
+            />
+        </div>
+
+        <!-- [Image] - ratio 4/3 -->
+        <h2 class="title">[Image] - ratio 4/3</h2>
+        <div class="image-container ratio-4x3" style="width: 200px">
+            <img
+                class="image cover"
+                src="../../images/avatar/avatar_01.jpg"
+                alt=""
+            />
+        </div>
+
+        <!-- [Image] - ratio 16/9 -->
+        <h2 class="title">[Image] - ratio 16/9</h2>
+        <div class="image-container ratio-16x9" style="width: 200px">
+            <img
+                class="image cover"
+                src="../../images/avatar/avatar_01.jpg"
+                alt=""
+            />
+        </div>
+
+        <!-- [Image] - ratio object-fit -->
+        <h2 class="title">[Image] - object-fit</h2>
+
+        <div style="display: flex; gap: 20px">
+            <!-- cover -->
+            <div
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                "
+            >
+                <div class="image-container ratio-16x9" style="width: 200px">
+                    <img
+                        class="image cover"
+                        src="../../images/avatar/avatar_01.jpg"
+                        alt=""
+                    />
+                </div>
+                <p>cover</p>
+            </div>
+
+            <!-- contain -->
+            <div
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                "
+            >
+                <div class="image-container ratio-16x9" style="width: 200px">
+                    <img
+                        class="image contain"
+                        src="../../images/avatar/avatar_01.jpg"
+                        alt=""
+                    />
+                </div>
+                <p>contain</p>
+            </div>
+
+            <!-- fill -->
+            <div
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                "
+            >
+                <div class="image-container ratio-16x9" style="width: 200px">
+                    <img
+                        class="image fill"
+                        src="../../images/avatar/avatar_01.jpg"
+                        alt=""
+                    />
+                </div>
+                <p>fill</p>
+            </div>
+
+            <!-- none -->
+            <div
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                "
+            >
+                <div class="image-container ratio-16x9" style="width: 200px">
+                    <img
+                        class="image none"
+                        src="../../images/avatar/avatar_01.jpg"
+                        alt=""
+                    />
+                </div>
+                <p>none</p>
+            </div>
+        </div>
+    </body>
+</html>

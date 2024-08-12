@@ -1,0 +1,41 @@
+/*///////////////////////////
+===== component - Image =====
+///////////////////////////*/
+
+//////////////////////// ===== Image START ===== ////////////////////////
+
+.image-container {
+    background-color: #e4e4e4;
+    overflow: hidden;
+}
+.image-container .image {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.image-container.ratio-1x1 {
+    aspect-ratio: 1 / 1;
+}
+.image-container.ratio-3x2 {
+    aspect-ratio: 3 / 2;
+}
+.image-container.ratio-4x3 {
+    aspect-ratio: 4 / 3;
+}
+.image-container.ratio-16x9 {
+    aspect-ratio: 16 / 9;
+}
+
+.image.cover {
+    object-fit: cover;
+}
+.image.contain {
+    object-fit: contain;
+}
+.image.fill {
+    object-fit: fill;
+}
+.image.none {
+    object-fit: none;
+}
