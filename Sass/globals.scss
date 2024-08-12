@@ -1,50 +1,42 @@
 // 載入基礎設定
-// @import "base/base_reset";
-// @import "base/base_gridSystem";
-// @import "base/base_spacing";
-// @import "base/variable";
-
-// component區塊設定
-// @import "components/component_avatar";
-// @import "components/component_checkbox";
-// @import "components/component_radio";
-// @import "components/component_input-basic";
-// @import "components/component_divider";
-// @import "components/component_toggle";
-// @import "components/component_tab";
-// layout區塊設定
-// @import "layout_header";
-
-// 載入基礎設定
-@import "./component/theme/reset";
+@import "./component/theme/_reset";
 @import "./component/theme/_variable";
 @import "./component/theme/_function";
 @import "./component/theme/_map";
 @import "./component/theme/_base";
 
 // component區塊設定
-@import "./component/_accordion";
-@import "./component/_breadcrumb";
-@import "./component/_checkbox";
-@import "./component/_divider";
-@import "./component/_tabs";
-@import "./component/_textarea";
-@import "./component/_toggle";
-@import "./component/_progress";
-@import "./component/_radio";
-@import "./component/_image";
 @import "./component/_title";
 
+@import "./component/_textarea";
+@import "./component/_toggle";
+@import "./component/_radio";
+@import "./component/_checkbox";
+@import "./component/_tabs";
+@import "./component/_accordion";
+@import "./component/_breadcrumb";
+@import "./component/_progress";
+@import "./component/_divider";
+@import "./component/_image";
+
+// component element 區塊設定
+@import "./component/element/_button";
+@import "./component/element/_input";
+@import "./component/element/_avatar";
+@import "./component/element/_avatar_group";
+
 // component module 區塊設定
+@import "./component/module/_menu";
+@import "./component/module/_password";
 @import "./component/module/_search";
 @import "./component/module/_slider";
 
 // component section 區塊設定
 @import "./component/section/_card";
 
-// component element 區塊設定
-@import "./component/element/_avatar";
-@import "./component/element/_button";
-@import "./component/element/_input";
-
 @import "./custom";
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
